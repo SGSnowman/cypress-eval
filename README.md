@@ -12,15 +12,22 @@ QA automated testing evaluation project using Cypress.io
 ### The First Scenario
 
 - Open the browser
-- Visit https://demoqa.com/automation-practice-form
+- Visit https://demoqa.com/books
 - Find that page's header
-- Make sure the text is "Practice Form"
+- Make sure the text is "Book Store"
 
 # Basic Scenarios to Automate
-
-## Elements Tab
+- [X]  verify items in left pannel are clickable
+- [X]  verify search button gives exact results
+- [X]  verify books links open the book page and back to book store works fine
+- [X]  verify page dropdown at the bottom displays only selected number of books
+- [X]  verify next button shows next set of books
 
 # More Scenarios to Automate
+- [X]  verify menus under each left pannel
+- [X]  verify the table contains book name, author and publisher
+- [X]  verify image on right side
+- [X]  verify login button works fine
 
 ## Book Store Application
 

@@ -1,15 +1,12 @@
-const Form_URL = '/automation-practice-form/'
+const Book_URL = '/books'
 
 describe('Forms', () => {
   before(() => {
-    cy.visit(Form_URL)
-
-    cy.url()
-      .should('eq', Cypress.config().baseUrl + Form_URL)
+    cy.visit(Book_URL)
   })
 
   it('should display the Autocomplete title', () => {
     cy.get('.main-header')
-      .should('contain', 'Practice Form')
+      .should('contain', 'Book Store')
   })
 })
