@@ -13,6 +13,7 @@
   "author": "Lanetix",
   "license": "GPL-3.0",
   "devDependencies": {
-    "cypress": "^4.12.1"
+    "cypress": "^4.12.1",
+    "cypress-file-upload": "^5.0.8"
   }
 }
