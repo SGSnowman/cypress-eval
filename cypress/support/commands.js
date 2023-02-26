@@ -23,3 +23,15 @@
 //
 // -- This is will overwrite an existing command --
 // Cypress.Commands.overwrite("visit", (originalFn, url, options) => { ... })
+Cypress.Commands.add("uncaughtExceptionHandler", () => {
+  // this event will automatically be unbound when a
+  // test ends because it's attached to 'cy'
+  cy.log(
+    "uncaughtExceptionHandler - exiting ================================================="
+  );
+  Cypress.on("uncaught:exception", (err, runnable) => {
+    // returning false here prevents Cypress from
+    // failing the test
+    return false;
+  });
+});
